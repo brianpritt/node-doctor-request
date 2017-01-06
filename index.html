@@ -2,15 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
    <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
+    <title>Dr. Feelgood</title>
   </head>
   <body>
-      <input id = "first-name" type="text" placeholder="First Name">
-      <input id = "last-name" type="text" placeholder="Last Name">
-      <input id = "ailment" type="text" placeholder="Symptoms">
-      <button class="button" id="get-doctor">Get List of Doctors!</button>
-    <div id="results"> </div>
+
+      <div class="container">
+
+        <h1>
+          Find your Doctor
+        </h1>
+        <hr>
+        <div class="search-bar">
+        <input class="form-control" id = "first-name" type="text" placeholder="First Name">
+        <input class="form-control" id = "last-name" type="text" placeholder="Last Name">
+        <input class="form-control" id = "ailment" type="text" placeholder="Symptoms">
+        <button class="button btn btn-info" id="get-doctor">Get List of Doctors!</button>
+      </div>
+
+
+      <div id="results" class="search-bar"><h2>Results</h2></div>
+    </div>
+
   </body>
 </html>

@@ -6,20 +6,14 @@ function Doctors(firstName, lastName, symptom){
   this.symptom = symptom;
 }
 
-Doctors.prototype.getSymptom = function(){
-  var resultArray = [];
+Doctors.prototype.getSymptom = function(displayFunction){
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ this.symptom+'&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
   .then(function(result) {
-    var allDoctors = result;
-    console.log(allDoctors);
-  //   allDoctors.forEach(function(eachBio){
-  //    resultArray.push(eachBio.profile);
-  //  });
+    displayFunction(result);
     })
    .fail(function(error){
       console.log("fail");
     });
-    console.log(resultArray);
   };
 
 

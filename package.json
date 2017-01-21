@@ -1,7 +1,7 @@
 {
   "name": "doctor-directory",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### _Application has user input an ailment, and returns list of doctors who treat said ailment {1/6/2017}_",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "bower-files": "^3.14.1",
+    "browser-sync": "^2.18.6",
+    "browserify": "^13.3.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
     "bower-files": "^3.14.1",
     "browser-sync": "^2.18.6",
     "browserify": "^13.3.0",
